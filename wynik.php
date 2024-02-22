@@ -17,7 +17,7 @@ if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
         echo "Zdobyte punkty: "."<br>";
       echo $row['punkty']."<br>";
-      echo "<a href='quiz.php'>quiz</a>";
+      echo "<a href='quiz.php'>Wynik</a>";
 
     }
 }

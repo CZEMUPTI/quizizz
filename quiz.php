@@ -8,67 +8,46 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
     <style>
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-h1 {
-    font-family: "Protest Strike", sans-serif;
-    font-weight: 100;
-    padding: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-
-.card {
-    font-family: "Protest Strike", sans-serif;
-    font-weight: 100;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-
-form button {
-    width: 60%;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 5px;
-    background-color: #99ff33;
-    border-radius: 15px;
-}
-
-
-form button:hover {
-    background-color: #59e557;
-    transform: scale(1.05);
-}
-
-
-.message {
+        h1{
+            font-family: "Protest Strike", sans-serif;
+            font-weight: 100;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align:center;
+        }
+        .card{
+            font-family: "Protest Strike", sans-serif;
+            font-weight: 100;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align:center;
+        }
+        form button{
+            width: 60%;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: #99ff33;
+            border-radius: 15px;
+        }
+        .message {
     color: #ff0000;
     font-size: 24px;
     font-weight: bold;
-}
-
+  }
     </style>
 </head>
-<body onload="startCountdown()">
+<body>
 <h1>Witaj na quizie!</h1>
-<div id="clock">
-        
+<div id="clock" onclick="startCountdown()">
+        Kliknij, aby rozpocząć odliczanie do 1 minuty
     </div>
 
     <script>
          function startCountdown() {
-            var timeLeft = 6000;
+            var timeLeft = 60;
             var clockDiv = document.getElementById('clock');
             clockDiv.innerHTML = "Pozostały czas: " + timeLeft + " sekund";
 
